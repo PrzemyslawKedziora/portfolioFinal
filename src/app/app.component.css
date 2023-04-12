@@ -19,14 +19,13 @@ ul>li{
   margin: 10px;
 }
 .topBar{
+  position: sticky;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .nameLogo{
-  position: relative;
   font-size: 30px;
-  right: 63%;
 }
 .panelsRight{
   display: flex;
@@ -45,7 +44,7 @@ ul>li{
   margin-bottom: 200px;
   margin-left: 30px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 .AbMeText{
   width: 60%;
@@ -59,9 +58,9 @@ ul>li{
 }
 .userIMG{
   border-radius: 50%;
-  position: absolute;
-  right: 100px;
-  bottom: 360px;
+}
+.col-md-6{
+  margin: 0 3vw 2vh 0;
 }
 .skills{
   display: flex;
@@ -72,7 +71,6 @@ ul>li{
   text-align: center;
   font-size: 45px;
   align-items: center;
-  margin-bottom: 50px;
   margin-top: 100px;
 }
 .skills img{
@@ -111,7 +109,6 @@ ul>li{
   text-align: center;
   font-size: 45px;
   align-items: center;
-  margin-bottom: 50px;
   margin-top: 400px;
   font-weight: bold;
 }
@@ -133,30 +130,16 @@ ul>li{
 }
 .header2{
   font-size: 45px;
-  margin:50px;
   margin-bottom: 200px;
   font-weight: bold;
 }
 .qualifications{
   text-align: center;
 }
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 15px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  justify-content: center;
-  margin-right: 30%;
-  margin-left: 30%;
-  margin-bottom: 300px;
-}
 .object1{
-  grid-area: 1 / 1 / 2 / 3;
   align-content: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 .object1:hover{
   cursor: pointer;
@@ -164,9 +147,13 @@ ul>li{
 .object1 img {
   border-radius: 10%;
 }
+.credentials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vw;
+}
 button{
-  position: absolute;
-  left: 840px;
   width: 230px;
   height: 60px;
   border-radius: 10px;
